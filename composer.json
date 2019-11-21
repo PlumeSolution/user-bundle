@@ -1,0 +1,30 @@
+{
+    "name": "plume-solution/user-bundle",
+    "description": "A new bundle for easy user management",
+    "type": "symfony-bundle",
+
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "GothShoot",
+            "email": "contact@plumesolution.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.2",
+        "symfony/security-bundle": "^5.0",
+        "symfony/orm-pack": "^1.0",
+        "symfony/framework-bundle": "^5.0",
+        "symfony/form": "^5.0",
+        "symfony/twig-bundle": "^5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "PSUserBundle\\": "src/"
+        }
+    }
+}
