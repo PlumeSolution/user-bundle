@@ -4,7 +4,6 @@ namespace PSUserBundle\Credentials;
 
 use PSUserBundle\Fields\NicknameTrait;
 use PSUserBundle\Fields\PasswordTrait;
-use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * Trait NicknamePasswordTrait
@@ -19,7 +18,7 @@ trait NicknamePasswordTrait
     /**
      * @return string
      */
-    protected function getUsername() : string
+    public function getUsername(): string
     {
         return $this->nickname;
     }
