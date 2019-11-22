@@ -30,6 +30,4 @@ trait NicknameTrait
     {
         $this->nickname = $nickname;
     }
-
-
 }

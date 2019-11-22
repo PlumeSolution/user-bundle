@@ -23,7 +23,7 @@ trait PasswordTrait
     /**
      * @return string
      */
-    public function getPassword()
+    public function getPassword(): string
     {
         return $this->password;
     }
@@ -31,7 +31,7 @@ trait PasswordTrait
     /**
      * @param string $password
      */
-    public function setPassword($password)
+    public function setPassword(string $password)
     {
         $this->password = $password;
     }
@@ -39,7 +39,7 @@ trait PasswordTrait
     /**
      * @return string
      */
-    public function getSalt()
+    public function getSalt(): string
     {
         return $this->salt;
     }
@@ -47,7 +47,7 @@ trait PasswordTrait
     /**
      * @param string $salt
      */
-    public function setSalt($salt)
+    public function setSalt(?string $salt)
     {
         $this->salt = $salt;
     }
