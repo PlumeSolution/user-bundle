@@ -1,0 +1,19 @@
+<html lang="en">
+
+<head>
+    <title>login</title>
+</head>
+
+<body>
+<h1>Login</h1>
+
+{{ form_start(form) }}
+{{ form_errors(form) }}
+{{ form_row(form.nickname, {label: 'Username', translation_domain: false}) }}
+{{ form_row(form.password, {label: 'Password', translation_domain: false}) }}
+{{ form_row(form.remember_me, {label: 'Remember me', required: false, translation_domain: false}) }}
+{{ form_row(form.submit, {translation_domain: false}) }}
+{{ form_end(form) }}
+</body>
+
+</html>

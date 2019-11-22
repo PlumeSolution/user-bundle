@@ -9,28 +9,49 @@ use Symfony\Component\HttpFoundation\Response;
 
 abstract class LoginController extends AbstractController implements LoginInterface
 {
-    public function __construct()
-    {
-        // TODO: Implement __construct() method.
-    }
-
+    /**
+     * @inheritDoc
+     */
     public function __invoke(Request $request): Response
     {
-        // TODO: Implement __invoke() method.
+        if ($this->isGranted('IS_AUTHENTICATED_FULLY'))
+        {
+            return $this->redirectIfAlreadyLogged();
+        }
+
+        $form = $this->getLoginForm();
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid())
+        {
+            return $this->redirectIfAlreadyLogged();
+        }
+
+        return $this->renderTemplate($form);
     }
 
-    function redirectIfAlreadyLogged(Request $request): ?Response
+    /**
+     * @inheritDoc
+     */
+    function redirectIfAlreadyLogged(): Response
     {
-        // TODO: Implement redirectIfAlreadyLogged() method.
+        return $this->redirect('/');
     }
 
-    function getLoginForm(Request $request): FormInterface
+    /**
+     * @inheritDoc
+     */
+    function getLoginForm(): FormInterface
     {
-        // TODO: Implement getLoginForm() method.
+        return $this->createForm('PSUserBundle\Form\LoginType');
     }
 
+    /**
+     * @inheritDoc
+     */
     function renderTemplate(FormInterface $form): Response
     {
-        // TODO: Implement renderTemplate() method.
+        return $this->render('@PSUserBundle/login.html.twig', ['form' => $form]);
     }
 }
