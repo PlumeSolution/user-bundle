@@ -5,6 +5,10 @@ namespace PSUserBundle\Fields;
 use Doctrine\ORM\Mapping as ORM;
 use PSUserBundle\Models\BaseUser;
 
+/**
+ * Trait RolesTrait
+ * @package PSUserBundle\Fields
+ */
 trait RolesTrait
 {
     /**
@@ -29,18 +33,22 @@ trait RolesTrait
         $this->roles = $roles;
     }
 
-
-
     /**
-     * @param $role
+     * @param string $role
+     *
      * @return bool
      */
-    public function hasRole($role)
+    public function hasRole(string $role)
     {
         return in_array(strtoupper($role), $this->getRoles(), true);
     }
 
-    public function addRole($role)
+    /**
+     * @param string $role
+     *
+     * @return $this
+     */
+    public function addRole(string $role)
     {
         $role = strtoupper($role);
         if ($role === BaseUser::ROLE_DEFAULT) {
@@ -54,7 +62,12 @@ trait RolesTrait
         return $this;
     }
 
-    public function removeRole($role)
+    /**
+     * @param string $role
+     *
+     * @return $this
+     */
+    public function removeRole(string $role)
     {
         if (false !== $key = array_search(strtoupper($role), $this->roles, true))
         {
