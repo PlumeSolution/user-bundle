@@ -1,6 +1,7 @@
 <?php
 
 namespace PSUserBundle\Fields;
+
 use Doctrine\ORM\Mapping as ORM;
 use PSUserBundle\Models\BaseUser;
 

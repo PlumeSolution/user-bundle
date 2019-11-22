@@ -34,7 +34,7 @@ abstract class LoginController extends AbstractController implements LoginInterf
     /**
      * @inheritDoc
      */
-    function redirectIfAlreadyLogged(): Response
+    protected function redirectIfAlreadyLogged(): Response
     {
         return $this->redirect('/');
     }
@@ -42,7 +42,7 @@ abstract class LoginController extends AbstractController implements LoginInterf
     /**
      * @inheritDoc
      */
-    function getLoginForm(): FormInterface
+    protected function getLoginForm(): FormInterface
     {
         return $this->createForm('PSUserBundle\Form\LoginType');
     }
@@ -50,7 +50,7 @@ abstract class LoginController extends AbstractController implements LoginInterf
     /**
      * @inheritDoc
      */
-    function renderTemplate(FormInterface $form): Response
+    protected function renderTemplate(FormInterface $form): Response
     {
         return $this->render('@PSUserBundle/login.html.twig', ['form' => $form]);
     }
