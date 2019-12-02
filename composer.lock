@@ -2594,7 +2594,7 @@
         },
         {
             "name": "symfony/inflector",
-            "version": "v5.0.0",
+            "version": "v5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/inflector.git",
@@ -3221,16 +3221,16 @@
         },
         {
             "name": "symfony/property-access",
-            "version": "v5.0.0",
+            "version": "v5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-access.git",
-                "reference": "8203dcdeb544dd0fa36a127fd04eb8bb08ae44f1"
+                "reference": "542a4f041c4bcbefdecbd537122959d0c388ecd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-access/zipball/8203dcdeb544dd0fa36a127fd04eb8bb08ae44f1",
-                "reference": "8203dcdeb544dd0fa36a127fd04eb8bb08ae44f1",
+                "url": "https://api.github.com/repos/symfony/property-access/zipball/542a4f041c4bcbefdecbd537122959d0c388ecd9",
+                "reference": "542a4f041c4bcbefdecbd537122959d0c388ecd9",
                 "shasum": ""
             },
             "require": {
@@ -3284,7 +3284,7 @@
                 "property path",
                 "reflection"
             ],
-            "time": "2019-11-18T17:27:11+00:00"
+            "time": "2019-12-01T10:51:15+00:00"
         },
         {
             "name": "symfony/routing",
@@ -3364,16 +3364,16 @@
         },
         {
             "name": "symfony/security-bundle",
-            "version": "v5.0.0",
+            "version": "v5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-bundle.git",
-                "reference": "a8f386340847b7678f96bb3255c3408c7a57322f"
+                "reference": "ac38677600639af46d7f97fa7a5377032f1a4df7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/a8f386340847b7678f96bb3255c3408c7a57322f",
-                "reference": "a8f386340847b7678f96bb3255c3408c7a57322f",
+                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/ac38677600639af46d7f97fa7a5377032f1a4df7",
+                "reference": "ac38677600639af46d7f97fa7a5377032f1a4df7",
                 "shasum": ""
             },
             "require": {
@@ -3385,7 +3385,7 @@
                 "symfony/security-core": "^4.4|^5.0",
                 "symfony/security-csrf": "^4.4|^5.0",
                 "symfony/security-guard": "^4.4|^5.0",
-                "symfony/security-http": "^4.4|^5.0"
+                "symfony/security-http": "^4.4.1|^5.0.1"
             },
             "conflict": {
                 "symfony/browser-kit": "<4.4",
@@ -3443,11 +3443,11 @@
             ],
             "description": "Symfony SecurityBundle",
             "homepage": "https://symfony.com",
-            "time": "2019-11-18T17:27:11+00:00"
+            "time": "2019-11-30T14:12:50+00:00"
         },
         {
             "name": "symfony/security-core",
-            "version": "v5.0.0",
+            "version": "v5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-core.git",
@@ -3520,7 +3520,7 @@
         },
         {
             "name": "symfony/security-csrf",
-            "version": "v5.0.0",
+            "version": "v5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-csrf.git",
@@ -3579,22 +3579,22 @@
         },
         {
             "name": "symfony/security-guard",
-            "version": "v5.0.0",
+            "version": "v5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-guard.git",
-                "reference": "6ae91611df8747c45a03bdbc7fc2d355c8d2908f"
+                "reference": "3e724cb9c186986e66ca2c1aaaba16fe4aa9abf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-guard/zipball/6ae91611df8747c45a03bdbc7fc2d355c8d2908f",
-                "reference": "6ae91611df8747c45a03bdbc7fc2d355c8d2908f",
+                "url": "https://api.github.com/repos/symfony/security-guard/zipball/3e724cb9c186986e66ca2c1aaaba16fe4aa9abf9",
+                "reference": "3e724cb9c186986e66ca2c1aaaba16fe4aa9abf9",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2.5",
                 "symfony/security-core": "^5.0",
-                "symfony/security-http": "^4.4|^5.0"
+                "symfony/security-http": "^4.4.1|^5.0.1"
             },
             "require-dev": {
                 "psr/log": "~1.0"
@@ -3629,20 +3629,20 @@
             ],
             "description": "Symfony Security Component - Guard",
             "homepage": "https://symfony.com",
-            "time": "2019-11-18T17:27:11+00:00"
+            "time": "2019-11-30T14:12:50+00:00"
         },
         {
             "name": "symfony/security-http",
-            "version": "v5.0.0",
+            "version": "v5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-http.git",
-                "reference": "18f96c1f4aff294d6872908741731ff0993dbd6f"
+                "reference": "aa89f67b24f9c028d14c1e5f88d7d14ad6c813c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-http/zipball/18f96c1f4aff294d6872908741731ff0993dbd6f",
-                "reference": "18f96c1f4aff294d6872908741731ff0993dbd6f",
+                "url": "https://api.github.com/repos/symfony/security-http/zipball/aa89f67b24f9c028d14c1e5f88d7d14ad6c813c5",
+                "reference": "aa89f67b24f9c028d14c1e5f88d7d14ad6c813c5",
                 "shasum": ""
             },
             "require": {
@@ -3694,7 +3694,7 @@
             ],
             "description": "Symfony Security Component - HTTP Integration",
             "homepage": "https://symfony.com",
-            "time": "2019-11-21T07:02:40+00:00"
+            "time": "2019-12-01T11:14:36+00:00"
         },
         {
             "name": "symfony/service-contracts",
