@@ -13,19 +13,43 @@ class NicknamePasswordUserTest extends TestCase
         $this->assertInstanceOf('PSUserBundle\Models\NicknamePasswordUser', $user);
     }
 
+    public function testGetPassword()
+    {
+        $user = new NicknamePasswordUser('user', 'password', null);
+        $this->assertSame('password', $user->getPassword());
+    }
+
     public function testSetPassword()
     {
-        // TODO: implement testSetPassword() method.
+        $user = new NicknamePasswordUser('user', 'password', null);
+        $user->setPassword('pwd');
+        $this->assertSame('pwd', $user->getPassword());
     }
 
     public function testGetNickname()
     {
-        // TODO: implement testGetNickname() method.
+        $user = new NicknamePasswordUser('user', 'password', null);
+        $this->assertSame('user', $user->getNickname());
     }
 
-    public function testGetPassword()
+    public function testSetNickname()
     {
-        // TODO: implement testGetPassword() method.
+        $user = new NicknamePasswordUser('user', 'password', null);
+        $user->setNickname('user2');
+        $this->assertSame('user2', $user->getNickname());
+    }
+
+    public function testGetSalt()
+    {
+        $user = new NicknamePasswordUser('user', 'password', null);
+        $this->assertSame(null, $user->getSalt());
+    }
+
+    public function testSetSalt()
+    {
+        $user = new NicknamePasswordUser('user', 'password', null);
+        $user->setSalt('salt');
+        $this->assertSame('salt', $user->getSalt());
     }
 
     public function testAddRole()
@@ -43,23 +67,8 @@ class NicknamePasswordUserTest extends TestCase
         // TODO: implement testRemoveRole() method.
     }
 
-    public function testGetSalt()
-    {
-        // TODO: implement testGetSalt() method.
-    }
-
     public function testHasRole()
     {
         // TODO: implement testHasRole() method.
-    }
-
-    public function testSetNickname()
-    {
-        // TODO: implement testSetNickname() method.
-    }
-
-    public function testSetSalt()
-    {
-        // TODO: implement testSetSalt() method.
     }
 }
