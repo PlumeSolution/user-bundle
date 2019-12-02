@@ -42,7 +42,7 @@ class NicknamePasswordUserTest extends TestCase
     public function testGetSalt()
     {
         $user = new NicknamePasswordUser('user', 'password', null);
-        $this->assertNull($user->getSalt());
+        $this->assertSame(null, $user->getSalt());
     }
 
     public function testSetSalt()
