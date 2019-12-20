@@ -1782,16 +1782,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v5.0.1",
+            "version": "v5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "ab20e9076e8f1dfedd3921daf9f7686ad543877f"
+                "reference": "f9dbfbf487d08f60b1c83220edcd16559d1e40a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/ab20e9076e8f1dfedd3921daf9f7686ad543877f",
-                "reference": "ab20e9076e8f1dfedd3921daf9f7686ad543877f",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/f9dbfbf487d08f60b1c83220edcd16559d1e40a2",
+                "reference": "f9dbfbf487d08f60b1c83220edcd16559d1e40a2",
                 "shasum": ""
             },
             "require": {
@@ -1851,7 +1851,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2019-12-01T10:51:15+00:00"
+            "time": "2019-12-19T16:01:11+00:00"
         },
         {
             "name": "symfony/doctrine-bridge",
@@ -3367,16 +3367,16 @@
         },
         {
             "name": "symfony/security-bundle",
-            "version": "v5.0.1",
+            "version": "v5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-bundle.git",
-                "reference": "ac38677600639af46d7f97fa7a5377032f1a4df7"
+                "reference": "5cf83dea155ae9666dd491470d760c126e4dab98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/ac38677600639af46d7f97fa7a5377032f1a4df7",
-                "reference": "ac38677600639af46d7f97fa7a5377032f1a4df7",
+                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/5cf83dea155ae9666dd491470d760c126e4dab98",
+                "reference": "5cf83dea155ae9666dd491470d760c126e4dab98",
                 "shasum": ""
             },
             "require": {
@@ -3446,7 +3446,7 @@
             ],
             "description": "Symfony SecurityBundle",
             "homepage": "https://symfony.com",
-            "time": "2019-11-30T14:12:50+00:00"
+            "time": "2019-12-16T10:47:49+00:00"
         },
         {
             "name": "symfony/security-core",
@@ -3523,7 +3523,7 @@
         },
         {
             "name": "symfony/security-csrf",
-            "version": "v5.0.1",
+            "version": "v5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-csrf.git",
