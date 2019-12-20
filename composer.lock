@@ -3582,7 +3582,7 @@
         },
         {
             "name": "symfony/security-guard",
-            "version": "v5.0.1",
+            "version": "v5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-guard.git",
