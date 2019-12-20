@@ -3450,16 +3450,16 @@
         },
         {
             "name": "symfony/security-core",
-            "version": "v5.0.1",
+            "version": "v5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-core.git",
-                "reference": "85009c888dcd612e3207f55e0be6d62faa5cdcb4"
+                "reference": "4fa0454de2fab0f6c2e9990976d8872b16a0e0a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-core/zipball/85009c888dcd612e3207f55e0be6d62faa5cdcb4",
-                "reference": "85009c888dcd612e3207f55e0be6d62faa5cdcb4",
+                "url": "https://api.github.com/repos/symfony/security-core/zipball/4fa0454de2fab0f6c2e9990976d8872b16a0e0a9",
+                "reference": "4fa0454de2fab0f6c2e9990976d8872b16a0e0a9",
                 "shasum": ""
             },
             "require": {
@@ -3519,7 +3519,7 @@
             ],
             "description": "Symfony Security Component - Core Library",
             "homepage": "https://symfony.com",
-            "time": "2019-11-21T07:02:40+00:00"
+            "time": "2019-12-16T11:08:25+00:00"
         },
         {
             "name": "symfony/security-csrf",
@@ -3636,16 +3636,16 @@
         },
         {
             "name": "symfony/security-http",
-            "version": "v5.0.1",
+            "version": "v5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-http.git",
-                "reference": "aa89f67b24f9c028d14c1e5f88d7d14ad6c813c5"
+                "reference": "64afb9eb9161c65f87de6fc31e3633843bddc02a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-http/zipball/aa89f67b24f9c028d14c1e5f88d7d14ad6c813c5",
-                "reference": "aa89f67b24f9c028d14c1e5f88d7d14ad6c813c5",
+                "url": "https://api.github.com/repos/symfony/security-http/zipball/64afb9eb9161c65f87de6fc31e3633843bddc02a",
+                "reference": "64afb9eb9161c65f87de6fc31e3633843bddc02a",
                 "shasum": ""
             },
             "require": {
@@ -3697,7 +3697,7 @@
             ],
             "description": "Symfony Security Component - HTTP Integration",
             "homepage": "https://symfony.com",
-            "time": "2019-12-01T11:14:36+00:00"
+            "time": "2019-12-16T10:47:49+00:00"
         },
         {
             "name": "symfony/service-contracts",
