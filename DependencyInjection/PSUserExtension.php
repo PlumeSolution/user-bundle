@@ -15,6 +15,8 @@ class PSUserExtension extends Extension
      */
     public function load(array $configs, ContainerBuilder $container)
     {
-        //TODO : add new services loading :)
+        $configuration = $this->getConfiguration($configs, $container);
+        $config = $this->processConfiguration($configuration, $configs);
+        dump($config);
     }
 }
