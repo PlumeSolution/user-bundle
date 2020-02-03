@@ -3641,16 +3641,16 @@
         },
         {
             "name": "symfony/security-http",
-            "version": "v5.0.3",
+            "version": "v5.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-http.git",
-                "reference": "19ba77a92010f27bc3229439f744f52e03c900a0"
+                "reference": "e063a0a032f81d38b06cda73c1f5ed25cae8538e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-http/zipball/19ba77a92010f27bc3229439f744f52e03c900a0",
-                "reference": "19ba77a92010f27bc3229439f744f52e03c900a0",
+                "url": "https://api.github.com/repos/symfony/security-http/zipball/e063a0a032f81d38b06cda73c1f5ed25cae8538e",
+                "reference": "e063a0a032f81d38b06cda73c1f5ed25cae8538e",
                 "shasum": ""
             },
             "require": {
@@ -3702,7 +3702,7 @@
             ],
             "description": "Symfony Security Component - HTTP Integration",
             "homepage": "https://symfony.com",
-            "time": "2020-01-21T11:12:28+00:00"
+            "time": "2020-01-31T09:13:47+00:00"
         },
         {
             "name": "symfony/service-contracts",
