@@ -7,15 +7,26 @@ use PSUserBundle\Models\BaseUser;
 
 /**
  * Trait RolesTrait
+ *
  * @package PSUserBundle\Fields
  */
 trait RolesTrait
 {
     /**
      * @var array
-     * @ORM\Column(type="json_array")
+     * @ORM\Column(type="json")
      */
     protected $roles = [];
+
+    /**
+     * @param string $role
+     *
+     * @return bool
+     */
+    public function hasRole(string $role)
+    {
+        return in_array(strtoupper($role), $this->getRoles(), true);
+    }
 
     /**
      * @return array
@@ -36,26 +47,18 @@ trait RolesTrait
     /**
      * @param string $role
      *
-     * @return bool
-     */
-    public function hasRole(string $role)
-    {
-        return in_array(strtoupper($role), $this->getRoles(), true);
-    }
-
-    /**
-     * @param string $role
-     *
      * @return $this
      */
-    public function addRole(string $role)
+    public function addRole(string $role): self
     {
         $role = strtoupper($role);
-        if ($role === BaseUser::ROLE_DEFAULT) {
+        if ($role === BaseUser::ROLE_DEFAULT)
+        {
             return $this;
         }
 
-        if (!in_array($role, $this->roles, true)) {
+        if (!in_array($role, $this->roles, true))
+        {
             $this->roles[] = $role;
         }
 

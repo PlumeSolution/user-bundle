@@ -8,6 +8,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * Class UserManager
+ *
  * @package PSUserBundle\Manager
  */
 class UserManager
@@ -25,7 +26,7 @@ class UserManager
      * UserManager constructor.
      *
      * @param ManagerRegistry $doctrine
-     * @param TokenInterface  $securityToken
+     * @param TokenInterface $securityToken
      */
     public function __construct(ManagerRegistry $doctrine, TokenInterface $securityToken)
     {
@@ -34,17 +35,14 @@ class UserManager
     }
 
     /**
-     * Refresh user from database (and to session if is the logged user).
+     * Update user in database and refresh it for secure usage.
      *
      * @param UserInterface $user
      */
-    public function refreshUser(UserInterface $user)
+    public function updateUser(UserInterface $user): void
     {
-        $this->doctrine->getManager()->refresh($user);
-        if ($this->securityToken->getUser()->getId() == $user->getId())
-        {
-            $this->securityToken->setUser($user);
-        }
+        $this->saveUser($user);
+        $this->refreshUser($user);
     }
 
     /**
@@ -52,22 +50,30 @@ class UserManager
      *
      * @param UserInterface $user
      */
-    public function saveUser(UserInterface $user)
+    public function saveUser(UserInterface $user): void
     {
-        $em =$this->doctrine->getManager();
+        $em = $this->doctrine->getManager();
         $em->persist($user);
         $em->flush();
     }
 
     /**
-     * Update user in database and refresh it for secure usage.
+     * Refresh user from database (and to session if is the logged user).
      *
      * @param UserInterface $user
      */
-    public function updateUser(UserInterface $user)
+    public function refreshUser(UserInterface $user): void
     {
-        $this->saveUser($user);
-        $this->refreshUser($user);
+        $this->doctrine->getManager()
+                       ->refresh($user)
+        ;
+        if (
+            $this->securityToken->getUser()
+                                ->getId() === $user->getId()
+        )
+        {
+            $this->securityToken->setUser($user);
+        }
     }
 
     /**
@@ -75,9 +81,9 @@ class UserManager
      *
      * @param UserInterface $user
      */
-    public function deleteUser(UserInterface $user)
+    public function deleteUser(UserInterface $user): void
     {
-        $em =$this->doctrine->getManager();
+        $em = $this->doctrine->getManager();
         $em->remove($user);
         $em->flush();
     }

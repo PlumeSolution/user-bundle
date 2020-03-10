@@ -7,67 +7,67 @@ use PSUserBundle\Models\NicknamePasswordUser;
 
 class NicknamePasswordUserTest extends TestCase
 {
-    public function testInstance()
+    public function testInstance(): void
     {
         $user = new NicknamePasswordUser('user', 'password', null);
-        $this->assertInstanceOf('PSUserBundle\Models\NicknamePasswordUser', $user);
+        $this->assertInstanceOf(NicknamePasswordUser::class, $user);
     }
 
-    public function testGetPassword()
+    public function testGetPassword(): void
     {
         $user = new NicknamePasswordUser('user', 'password', null);
         $this->assertSame('password', $user->getPassword());
     }
 
-    public function testSetPassword()
+    public function testSetPassword(): void
     {
         $user = new NicknamePasswordUser('user', 'password', null);
         $user->setPassword('pwd');
         $this->assertSame('pwd', $user->getPassword());
     }
 
-    public function testGetNickname()
+    public function testGetNickname(): void
     {
         $user = new NicknamePasswordUser('user', 'password', null);
         $this->assertSame('user', $user->getNickname());
     }
 
-    public function testSetNickname()
+    public function testSetNickname(): void
     {
         $user = new NicknamePasswordUser('user', 'password', null);
         $user->setNickname('user2');
         $this->assertSame('user2', $user->getNickname());
     }
 
-    public function testGetSalt()
+    public function testGetSalt(): void
     {
         $user = new NicknamePasswordUser('user', 'password', null);
-        $this->assertSame(null, $user->getSalt());
+        $this->assertNull($user->getSalt());
     }
 
-    public function testSetSalt()
+    public function testSetSalt(): void
     {
         $user = new NicknamePasswordUser('user', 'password', null);
         $user->setSalt('salt');
         $this->assertSame('salt', $user->getSalt());
     }
 
-    public function testAddRole()
+    public function testAddRole(): void
     {
         // TODO: implement testAddRole() method.
     }
 
-    public function testGetRoles()
+    public function testGetRoles(): void
     {
         // TODO: implement testGetRoles() method.
     }
 
-    public function testRemoveRole()
+    public function testRemoveRole(): void
     {
         // TODO: implement testRemoveRole() method.
     }
 
-    public function testHasRole()
+    public function testHasRole(): void
     {
         // TODO: implement testHasRole() method.
     }

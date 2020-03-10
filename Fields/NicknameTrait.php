@@ -6,6 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Trait NicknameTrait
+ *
  * @package PSUserBundle\Fields
  */
 trait NicknameTrait

@@ -4,7 +4,6 @@ namespace PSUserBundle\Models;
 
 use PSUserBundle\Credentials\NicknamePasswordTrait;
 use PSUserBundle\Fields\RolesTrait;
-use Doctrine\ORM\Mapping as ORM;
 
 class NicknamePasswordUser extends BaseUser
 {
