@@ -28,7 +28,7 @@ abstract class LoginController extends AbstractController implements LoginInterf
             return $this->redirectIfAlreadyLogged();
         }
 
-        return $this->renderTemplate($form);
+        return $this->renderTemplate($form->createView());
     }
 
     /**
