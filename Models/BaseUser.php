@@ -2,8 +2,8 @@
 
 namespace PSUserBundle\Models;
 
-use Symfony\Component\Security\Core\User\UserInterface;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 abstract class BaseUser implements UserInterface
 {
@@ -21,7 +21,7 @@ abstract class BaseUser implements UserInterface
     /**
      * @return int
      */
-    public function getId()
+    public function getId(): int
     {
         return $this->id;
     }
@@ -39,7 +39,6 @@ abstract class BaseUser implements UserInterface
     }
 
 
-
     /**
      * Removes sensitive data from the user.
      *
@@ -48,6 +47,5 @@ abstract class BaseUser implements UserInterface
      */
     public function eraseCredentials()
     {
-        // TODO: Implement eraseCredentials() method.
     }
 }
