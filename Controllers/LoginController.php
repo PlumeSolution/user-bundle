@@ -37,7 +37,7 @@ abstract class LoginController extends AbstractController implements LoginInterf
      */
     protected function redirectIfAlreadyLogged(): Response
     {
-        return $this->redirect('/');
+        return $this->redirectToRoute('index');
     }
 
     /**

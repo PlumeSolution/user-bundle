@@ -16,14 +16,14 @@ trait RolesTrait
      * @var array
      * @ORM\Column(type="json")
      */
-    protected $roles = [];
+    protected array $roles = [];
 
     /**
      * @param string $role
      *
      * @return bool
      */
-    public function hasRole(string $role)
+    public function hasRole(string $role): bool
     {
         return in_array(strtoupper($role), $this->getRoles(), true);
     }
@@ -70,7 +70,7 @@ trait RolesTrait
      *
      * @return $this
      */
-    public function removeRole(string $role)
+    public function removeRole(string $role): self
     {
         if (false !== $key = array_search(strtoupper($role), $this->roles, true))
         {

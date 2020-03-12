@@ -11,14 +11,14 @@ trait PasswordTrait
      * @ORM\Column(type="string")
      * The encoded password (or plain if user password are not encoded)
      */
-    protected $password;
+    protected string $password;
 
     /**
      * @var string
      * @ORM\Column(type="string", nullable=true)
      * The salt used to encode user password
      */
-    protected $salt;
+    protected string $salt;
 
     /**
      * @return string

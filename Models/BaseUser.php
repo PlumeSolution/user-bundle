@@ -3,9 +3,11 @@
 namespace PSUserBundle\Models;
 
 use Doctrine\ORM\Mapping as ORM;
+use Serializable;
+use Symfony\Component\Security\Core\User\EquatableInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
-abstract class BaseUser implements UserInterface
+abstract class BaseUser implements UserInterface, EquatableInterface, Serializable
 {
     public const ROLE_DEFAULT = 'User';
 
