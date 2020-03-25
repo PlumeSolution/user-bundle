@@ -3,7 +3,6 @@
 namespace PSUserBundle\Manager;
 
 use Doctrine\Persistence\ManagerRegistry;
-use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
@@ -19,10 +18,6 @@ class UserManager
      */
     protected ManagerRegistry $doctrine;
     /**
-     * @var TokenInterface
-     */
-    protected TokenInterface $securityToken;
-    /**
      * @var UserPasswordEncoderInterface
      */
     protected UserPasswordEncoderInterface $passwordEncoder;
@@ -31,13 +26,11 @@ class UserManager
      * UserManager constructor.
      *
      * @param ManagerRegistry              $doctrine
-     * @param TokenInterface               $securityToken
      * @param UserPasswordEncoderInterface $passwordEncoder
      */
-    public function __construct(ManagerRegistry $doctrine, TokenInterface $securityToken, UserPasswordEncoderInterface $passwordEncoder)
+    public function __construct(ManagerRegistry $doctrine, UserPasswordEncoderInterface $passwordEncoder)
     {
         $this->doctrine = $doctrine;
-        $this->securityToken = $securityToken;
         $this->passwordEncoder = $passwordEncoder;
     }
 
@@ -74,13 +67,6 @@ class UserManager
         $this->doctrine->getManager()
                        ->refresh($user)
         ;
-        if (
-            $this->securityToken->getUser()
-                                ->getId() === $user->getId()
-        )
-        {
-            $this->securityToken->setUser($user);
-        }
     }
 
     /**
