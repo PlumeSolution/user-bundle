@@ -17,15 +17,15 @@ class UserManager
     /**
      * @var ManagerRegistry
      */
-    protected $doctrine;
+    protected ManagerRegistry $doctrine;
     /**
      * @var TokenInterface
      */
-    protected $securityToken;
+    protected TokenInterface $securityToken;
     /**
      * @var UserPasswordEncoderInterface
      */
-    protected $passwordEncoder;
+    protected UserPasswordEncoderInterface $passwordEncoder;
 
     /**
      * UserManager constructor.
