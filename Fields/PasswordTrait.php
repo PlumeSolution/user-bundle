@@ -18,7 +18,7 @@ trait PasswordTrait
      * @ORM\Column(type="string", nullable=true)
      * The salt used to encode user password
      */
-    protected string $salt;
+    protected ?string $salt;
 
     /**
      * @return string
