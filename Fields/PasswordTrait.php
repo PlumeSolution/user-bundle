@@ -11,14 +11,14 @@ trait PasswordTrait
      * @ORM\Column(type="string")
      * The encoded password (or plain if user password are not encoded)
      */
-    protected $password;
+    protected string $password;
 
     /**
      * @var string
      * @ORM\Column(type="string", nullable=true)
      * The salt used to encode user password
      */
-    protected $salt;
+    protected string $salt;
 
     /**
      * @return string
@@ -31,7 +31,7 @@ trait PasswordTrait
     /**
      * @param string $password
      */
-    public function setPassword(string $password)
+    public function setPassword(string $password): void
     {
         $this->password = $password;
     }
@@ -47,7 +47,7 @@ trait PasswordTrait
     /**
      * @param string $salt
      */
-    public function setSalt(?string $salt)
+    public function setSalt(?string $salt): void
     {
         $this->salt = $salt;
     }

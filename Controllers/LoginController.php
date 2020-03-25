@@ -2,6 +2,7 @@
 
 namespace PSUserBundle\Controllers;
 
+use PSUserBundle\Form\LoginType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -36,7 +37,7 @@ abstract class LoginController extends AbstractController implements LoginInterf
      */
     protected function redirectIfAlreadyLogged(): Response
     {
-        return $this->redirect('/');
+        return $this->redirectToRoute('index');
     }
 
     /**
@@ -44,7 +45,7 @@ abstract class LoginController extends AbstractController implements LoginInterf
      */
     protected function getLoginForm(): FormInterface
     {
-        return $this->createForm('PSUserBundle\Form\LoginType');
+        return $this->createForm(LoginType::class);
     }
 
     /**
@@ -52,6 +53,6 @@ abstract class LoginController extends AbstractController implements LoginInterf
      */
     protected function renderTemplate(FormInterface $form): Response
     {
-        return $this->render('@PSUser/Login/login.html.twig', ['form' => $form]);
+        return $this->render('Login/login.html.twig', ['form' => $form->createView()]);
     }
 }
