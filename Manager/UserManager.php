@@ -2,8 +2,10 @@
 
 namespace PSUserBundle\Manager;
 
+use App\Entity\User;
 use Symfony\Bridge\Doctrine\ManagerRegistry;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
@@ -15,22 +17,28 @@ class UserManager
     /**
      * @var ManagerRegistry
      */
-    private $doctrine;
+    protected $doctrine;
     /**
      * @var TokenInterface
      */
-    private $securityToken;
+    protected $securityToken;
+    /**
+     * @var UserPasswordEncoderInterface
+     */
+    protected $passwordEncoder;
 
     /**
      * UserManager constructor.
      *
-     * @param ManagerRegistry $doctrine
-     * @param TokenInterface  $securityToken
+     * @param ManagerRegistry              $doctrine
+     * @param TokenInterface               $securityToken
+     * @param UserPasswordEncoderInterface $passwordEncoder
      */
-    public function __construct(ManagerRegistry $doctrine, TokenInterface $securityToken)
+    public function __construct(ManagerRegistry $doctrine, TokenInterface $securityToken, UserPasswordEncoderInterface $passwordEncoder)
     {
         $this->doctrine = $doctrine;
         $this->securityToken = $securityToken;
+        $this->passwordEncoder = $passwordEncoder;
     }
 
     /**
@@ -80,5 +88,35 @@ class UserManager
         $em =$this->doctrine->getManager();
         $em->remove($user);
         $em->flush();
+    }
+
+    /**
+     * Create a new user in database
+     *
+     * @param string $userClass
+     * @param string $nickname
+     * @param string $password
+     *
+     * @return UserInterface
+     */
+    public function createUser(string $userClass, string $nickname, string $password): UserInterface
+    {
+        /**
+         * @var UserInterface $user
+         */
+        $user = new $userClass($nickname, '', '');
+
+        $user->setPassword(
+            $this->passwordEncoder->encodePassword(
+                $user,
+                $password
+            )
+        );
+
+        $user->addRole('ROLE_USER');
+
+        $this->saveUser($user);
+
+        return $user;
     }
 }
