@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-  "content-hash": "d90b588b7a8342f4c7fc4d5d5607c753",
+    "content-hash": "d90b588b7a8342f4c7fc4d5d5607c753",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -906,16 +906,16 @@
         },
         {
             "name": "doctrine/orm",
-          "version": "v2.7.2",
+            "version": "v2.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-              "reference": "dafe298ce5d0b995ebe1746670704c0a35868a6a"
+                "reference": "dafe298ce5d0b995ebe1746670704c0a35868a6a"
             },
             "dist": {
                 "type": "zip",
-              "url": "https://api.github.com/repos/doctrine/orm/zipball/dafe298ce5d0b995ebe1746670704c0a35868a6a",
-              "reference": "dafe298ce5d0b995ebe1746670704c0a35868a6a",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/dafe298ce5d0b995ebe1746670704c0a35868a6a",
+                "reference": "dafe298ce5d0b995ebe1746670704c0a35868a6a",
                 "shasum": ""
             },
             "require": {
@@ -986,20 +986,20 @@
                 "database",
                 "orm"
             ],
-          "time": "2020-03-19T06:41:02+00:00"
+            "time": "2020-03-19T06:41:02+00:00"
         },
         {
             "name": "doctrine/persistence",
-          "version": "1.3.7",
+            "version": "1.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/persistence.git",
-              "reference": "0af483f91bada1c9ded6c2cfd26ab7d5ab2094e0"
+                "reference": "0af483f91bada1c9ded6c2cfd26ab7d5ab2094e0"
             },
             "dist": {
                 "type": "zip",
-              "url": "https://api.github.com/repos/doctrine/persistence/zipball/0af483f91bada1c9ded6c2cfd26ab7d5ab2094e0",
-              "reference": "0af483f91bada1c9ded6c2cfd26ab7d5ab2094e0",
+                "url": "https://api.github.com/repos/doctrine/persistence/zipball/0af483f91bada1c9ded6c2cfd26ab7d5ab2094e0",
+                "reference": "0af483f91bada1c9ded6c2cfd26ab7d5ab2094e0",
                 "shasum": ""
             },
             "require": {
@@ -1007,7 +1007,7 @@
                 "doctrine/cache": "^1.0",
                 "doctrine/collections": "^1.0",
                 "doctrine/event-manager": "^1.0",
-              "doctrine/reflection": "^1.2",
+                "doctrine/reflection": "^1.2",
                 "php": "^7.1"
             },
             "conflict": {
@@ -1069,20 +1069,20 @@
                 "orm",
                 "persistence"
             ],
-          "time": "2020-03-21T15:13:52+00:00"
+            "time": "2020-03-21T15:13:52+00:00"
         },
         {
             "name": "doctrine/reflection",
-          "version": "1.2.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/reflection.git",
-              "reference": "b699ecc7f2784d1e49924fd9858cf1078db6b0e2"
+                "reference": "b699ecc7f2784d1e49924fd9858cf1078db6b0e2"
             },
             "dist": {
                 "type": "zip",
-              "url": "https://api.github.com/repos/doctrine/reflection/zipball/b699ecc7f2784d1e49924fd9858cf1078db6b0e2",
-              "reference": "b699ecc7f2784d1e49924fd9858cf1078db6b0e2",
+                "url": "https://api.github.com/repos/doctrine/reflection/zipball/b699ecc7f2784d1e49924fd9858cf1078db6b0e2",
+                "reference": "b699ecc7f2784d1e49924fd9858cf1078db6b0e2",
                 "shasum": ""
             },
             "require": {
@@ -1103,7 +1103,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                  "dev-master": "1.2.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -1147,7 +1147,7 @@
                 "reflection",
                 "static"
             ],
-          "time": "2020-03-21T11:34:59+00:00"
+            "time": "2020-03-21T11:34:59+00:00"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -1200,207 +1200,207 @@
             "time": "2014-01-12T16:20:24+00:00"
         },
         {
-          "name": "laminas/laminas-code",
-          "version": "3.4.1",
-          "source": {
-            "type": "git",
-            "url": "https://github.com/laminas/laminas-code.git",
-            "reference": "1cb8f203389ab1482bf89c0e70a04849bacd7766"
-          },
-          "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/laminas/laminas-code/zipball/1cb8f203389ab1482bf89c0e70a04849bacd7766",
-            "reference": "1cb8f203389ab1482bf89c0e70a04849bacd7766",
-            "shasum": ""
-          },
-          "require": {
-            "laminas/laminas-eventmanager": "^2.6 || ^3.0",
-            "laminas/laminas-zendframework-bridge": "^1.0",
-            "php": "^7.1"
-          },
-          "conflict": {
-            "phpspec/prophecy": "<1.9.0"
-          },
-          "replace": {
-            "zendframework/zend-code": "self.version"
-          },
-          "require-dev": {
-            "doctrine/annotations": "^1.7",
-            "ext-phar": "*",
-            "laminas/laminas-coding-standard": "^1.0",
-            "laminas/laminas-stdlib": "^2.7 || ^3.0",
-            "phpunit/phpunit": "^7.5.16 || ^8.4"
-          },
-          "suggest": {
-            "doctrine/annotations": "Doctrine\\Common\\Annotations >=1.0 for annotation features",
-            "laminas/laminas-stdlib": "Laminas\\Stdlib component"
-          },
-          "type": "library",
-          "extra": {
-            "branch-alias": {
-              "dev-master": "3.4.x-dev",
-              "dev-develop": "3.5.x-dev",
-              "dev-dev-4.0": "4.0.x-dev"
-            }
-          },
-          "autoload": {
-            "psr-4": {
-              "Laminas\\Code\\": "src/"
-            }
-          },
-          "notification-url": "https://packagist.org/downloads/",
-          "license": [
-            "BSD-3-Clause"
-          ],
-          "description": "Extensions to the PHP Reflection API, static code scanning, and code generation",
-          "homepage": "https://laminas.dev",
-          "keywords": [
-            "code",
-            "laminas"
-          ],
-          "time": "2019-12-31T16:28:24+00:00"
-        },
-      {
-        "name": "laminas/laminas-eventmanager",
-        "version": "3.2.1",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/laminas/laminas-eventmanager.git",
-          "reference": "ce4dc0bdf3b14b7f9815775af9dfee80a63b4748"
-        },
-        "dist": {
-          "type": "zip",
-          "url": "https://api.github.com/repos/laminas/laminas-eventmanager/zipball/ce4dc0bdf3b14b7f9815775af9dfee80a63b4748",
-          "reference": "ce4dc0bdf3b14b7f9815775af9dfee80a63b4748",
-          "shasum": ""
-        },
-        "require": {
-          "laminas/laminas-zendframework-bridge": "^1.0",
-          "php": "^5.6 || ^7.0"
-        },
-        "replace": {
-          "zendframework/zend-eventmanager": "self.version"
-        },
-        "require-dev": {
-          "athletic/athletic": "^0.1",
-          "container-interop/container-interop": "^1.1.0",
-          "laminas/laminas-coding-standard": "~1.0.0",
-          "laminas/laminas-stdlib": "^2.7.3 || ^3.0",
-          "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2"
-        },
-        "suggest": {
-          "container-interop/container-interop": "^1.1.0, to use the lazy listeners feature",
-          "laminas/laminas-stdlib": "^2.7.3 || ^3.0, to use the FilterChain feature"
-        },
-        "type": "library",
-        "extra": {
-          "branch-alias": {
-            "dev-master": "3.2-dev",
-            "dev-develop": "3.3-dev"
-          }
-        },
-        "autoload": {
-          "psr-4": {
-            "Laminas\\EventManager\\": "src/"
-          }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-          "BSD-3-Clause"
-        ],
-        "description": "Trigger and listen to events within a PHP application",
-        "homepage": "https://laminas.dev",
-        "keywords": [
-          "event",
-          "eventmanager",
-          "events",
-          "laminas"
-        ],
-        "time": "2019-12-31T16:44:52+00:00"
-      },
-      {
-        "name": "laminas/laminas-zendframework-bridge",
-        "version": "1.0.1",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
-          "reference": "0fb9675b84a1666ab45182b6c5b29956921e818d"
-        },
-        "dist": {
-          "type": "zip",
-          "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/0fb9675b84a1666ab45182b6c5b29956921e818d",
-          "reference": "0fb9675b84a1666ab45182b6c5b29956921e818d",
-          "shasum": ""
-        },
-        "require": {
-          "php": "^5.6 || ^7.0"
-        },
-        "require-dev": {
-          "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1",
-          "squizlabs/php_codesniffer": "^3.5"
-        },
-        "type": "library",
-        "extra": {
-          "branch-alias": {
-            "dev-master": "1.0.x-dev",
-            "dev-develop": "1.1.x-dev"
-          },
-          "laminas": {
-            "module": "Laminas\\ZendFrameworkBridge"
-          }
-        },
-        "autoload": {
-          "files": [
-            "src/autoload.php"
-          ],
-          "psr-4": {
-            "Laminas\\ZendFrameworkBridge\\": "src//"
-          }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-          "BSD-3-Clause"
-        ],
-        "description": "Alias legacy ZF class names to Laminas Project equivalents.",
-        "keywords": [
-          "ZendFramework",
-          "autoloading",
-          "laminas",
-          "zf"
-        ],
-        "time": "2020-01-07T22:58:31+00:00"
-      },
-      {
-            "name": "ocramius/package-versions",
-        "version": "1.7.0",
+            "name": "laminas/laminas-code",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Ocramius/PackageVersions.git",
-              "reference": "651c372efc914aea8223e049f85afaf65e09ba23"
+                "url": "https://github.com/laminas/laminas-code.git",
+                "reference": "1cb8f203389ab1482bf89c0e70a04849bacd7766"
             },
             "dist": {
                 "type": "zip",
-              "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/651c372efc914aea8223e049f85afaf65e09ba23",
-              "reference": "651c372efc914aea8223e049f85afaf65e09ba23",
+                "url": "https://api.github.com/repos/laminas/laminas-code/zipball/1cb8f203389ab1482bf89c0e70a04849bacd7766",
+                "reference": "1cb8f203389ab1482bf89c0e70a04849bacd7766",
                 "shasum": ""
             },
             "require": {
-              "composer-plugin-api": "^1.1.0",
-              "php": "^7.4.0"
+                "laminas/laminas-eventmanager": "^2.6 || ^3.0",
+                "laminas/laminas-zendframework-bridge": "^1.0",
+                "php": "^7.1"
+            },
+            "conflict": {
+                "phpspec/prophecy": "<1.9.0"
+            },
+            "replace": {
+                "zendframework/zend-code": "self.version"
             },
             "require-dev": {
-              "composer/composer": "^1.9.3",
-              "doctrine/coding-standard": "^7.0.2",
-              "ext-zip": "^1.15.0",
-              "infection/infection": "^0.15.3",
-              "phpunit/phpunit": "^9.0.1",
-              "vimeo/psalm": "^3.9.3"
+                "doctrine/annotations": "^1.7",
+                "ext-phar": "*",
+                "laminas/laminas-coding-standard": "^1.0",
+                "laminas/laminas-stdlib": "^2.7 || ^3.0",
+                "phpunit/phpunit": "^7.5.16 || ^8.4"
+            },
+            "suggest": {
+                "doctrine/annotations": "Doctrine\\Common\\Annotations >=1.0 for annotation features",
+                "laminas/laminas-stdlib": "Laminas\\Stdlib component"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4.x-dev",
+                    "dev-develop": "3.5.x-dev",
+                    "dev-dev-4.0": "4.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Code\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Extensions to the PHP Reflection API, static code scanning, and code generation",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "code",
+                "laminas"
+            ],
+            "time": "2019-12-31T16:28:24+00:00"
+        },
+        {
+            "name": "laminas/laminas-eventmanager",
+            "version": "3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-eventmanager.git",
+                "reference": "ce4dc0bdf3b14b7f9815775af9dfee80a63b4748"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-eventmanager/zipball/ce4dc0bdf3b14b7f9815775af9dfee80a63b4748",
+                "reference": "ce4dc0bdf3b14b7f9815775af9dfee80a63b4748",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-zendframework-bridge": "^1.0",
+                "php": "^5.6 || ^7.0"
+            },
+            "replace": {
+                "zendframework/zend-eventmanager": "self.version"
+            },
+            "require-dev": {
+                "athletic/athletic": "^0.1",
+                "container-interop/container-interop": "^1.1.0",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "laminas/laminas-stdlib": "^2.7.3 || ^3.0",
+                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2"
+            },
+            "suggest": {
+                "container-interop/container-interop": "^1.1.0, to use the lazy listeners feature",
+                "laminas/laminas-stdlib": "^2.7.3 || ^3.0, to use the FilterChain feature"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev",
+                    "dev-develop": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\EventManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Trigger and listen to events within a PHP application",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "event",
+                "eventmanager",
+                "events",
+                "laminas"
+            ],
+            "time": "2019-12-31T16:44:52+00:00"
+        },
+        {
+            "name": "laminas/laminas-zendframework-bridge",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
+                "reference": "0fb9675b84a1666ab45182b6c5b29956921e818d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/0fb9675b84a1666ab45182b6c5b29956921e818d",
+                "reference": "0fb9675b84a1666ab45182b6c5b29956921e818d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev",
+                    "dev-develop": "1.1.x-dev"
+                },
+                "laminas": {
+                    "module": "Laminas\\ZendFrameworkBridge"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/autoload.php"
+                ],
+                "psr-4": {
+                    "Laminas\\ZendFrameworkBridge\\": "src//"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Alias legacy ZF class names to Laminas Project equivalents.",
+            "keywords": [
+                "ZendFramework",
+                "autoloading",
+                "laminas",
+                "zf"
+            ],
+            "time": "2020-01-07T22:58:31+00:00"
+        },
+        {
+            "name": "ocramius/package-versions",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ocramius/PackageVersions.git",
+                "reference": "651c372efc914aea8223e049f85afaf65e09ba23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/651c372efc914aea8223e049f85afaf65e09ba23",
+                "reference": "651c372efc914aea8223e049f85afaf65e09ba23",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1.0",
+                "php": "^7.4.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.9.3",
+                "doctrine/coding-standard": "^7.0.2",
+                "ext-zip": "^1.15.0",
+                "infection/infection": "^0.15.3",
+                "phpunit/phpunit": "^9.0.1",
+                "vimeo/psalm": "^3.9.3"
             },
             "type": "composer-plugin",
             "extra": {
                 "class": "PackageVersions\\Installer",
                 "branch-alias": {
-                  "dev-master": "1.99.x-dev"
+                    "dev-master": "1.99.x-dev"
                 }
             },
             "autoload": {
@@ -1419,49 +1419,49 @@
                 }
             ],
             "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
-        "time": "2020-03-06T11:34:16+00:00"
+            "time": "2020-03-06T11:34:16+00:00"
         },
         {
             "name": "ocramius/proxy-manager",
-          "version": "2.7.0",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ocramius/ProxyManager.git",
-              "reference": "e77928e8f11ea36b388f87e75c993d05f5da6bf1"
+                "reference": "e77928e8f11ea36b388f87e75c993d05f5da6bf1"
             },
             "dist": {
                 "type": "zip",
-              "url": "https://api.github.com/repos/Ocramius/ProxyManager/zipball/e77928e8f11ea36b388f87e75c993d05f5da6bf1",
-              "reference": "e77928e8f11ea36b388f87e75c993d05f5da6bf1",
+                "url": "https://api.github.com/repos/Ocramius/ProxyManager/zipball/e77928e8f11ea36b388f87e75c993d05f5da6bf1",
+                "reference": "e77928e8f11ea36b388f87e75c993d05f5da6bf1",
                 "shasum": ""
             },
             "require": {
-              "laminas/laminas-code": "^3.4.1",
-              "ocramius/package-versions": "^1.5.1",
-              "php": "7.4.*",
-              "webimpress/safe-writer": "^2.0"
+                "laminas/laminas-code": "^3.4.1",
+                "ocramius/package-versions": "^1.5.1",
+                "php": "7.4.*",
+                "webimpress/safe-writer": "^2.0"
             },
-          "conflict": {
-            "doctrine/annotations": "<1.6.1",
-            "laminas/laminas-stdlib": "<3.2.1",
-            "zendframework/zend-stdlib": "<3.2.1"
+            "conflict": {
+                "doctrine/annotations": "<1.6.1",
+                "laminas/laminas-stdlib": "<3.2.1",
+                "zendframework/zend-stdlib": "<3.2.1"
             },
             "require-dev": {
-              "doctrine/coding-standard": "^6.0.0",
+                "doctrine/coding-standard": "^6.0.0",
                 "ext-phar": "*",
-              "infection/infection": "^0.15.0",
-              "nikic/php-parser": "^4.3.0",
-              "phpbench/phpbench": "^0.17.0",
-              "phpunit/phpunit": "^8.5.2",
-              "slevomat/coding-standard": "^5.0.4",
-              "squizlabs/php_codesniffer": "^3.5.4",
-              "vimeo/psalm": "^3.8.5"
+                "infection/infection": "^0.15.0",
+                "nikic/php-parser": "^4.3.0",
+                "phpbench/phpbench": "^0.17.0",
+                "phpunit/phpunit": "^8.5.2",
+                "slevomat/coding-standard": "^5.0.4",
+                "squizlabs/php_codesniffer": "^3.5.4",
+                "vimeo/psalm": "^3.8.5"
             },
             "suggest": {
-              "laminas/laminas-json": "To have the JsonRpc adapter (Remote Object feature)",
-              "laminas/laminas-soap": "To have the Soap adapter (Remote Object feature)",
-              "laminas/laminas-xmlrpc": "To have the XmlRpc adapter (Remote Object feature)",
-              "ocramius/generated-hydrator": "To have very fast object to array to object conversion for ghost objects"
+                "laminas/laminas-json": "To have the JsonRpc adapter (Remote Object feature)",
+                "laminas/laminas-soap": "To have the Soap adapter (Remote Object feature)",
+                "laminas/laminas-xmlrpc": "To have the XmlRpc adapter (Remote Object feature)",
+                "ocramius/generated-hydrator": "To have very fast object to array to object conversion for ghost objects"
             },
             "type": "library",
             "extra": {
@@ -1470,8 +1470,8 @@
                 }
             },
             "autoload": {
-              "psr-4": {
-                "ProxyManager\\": "src/ProxyManager"
+                "psr-4": {
+                    "ProxyManager\\": "src/ProxyManager"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1494,7 +1494,7 @@
                 "proxy pattern",
                 "service proxies"
             ],
-          "time": "2020-02-08T19:22:03+00:00"
+            "time": "2020-02-08T19:22:03+00:00"
         },
         {
             "name": "psr/cache",
@@ -1639,16 +1639,16 @@
         },
         {
             "name": "psr/log",
-          "version": "1.1.3",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-              "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc"
+                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc"
             },
             "dist": {
                 "type": "zip",
-              "url": "https://api.github.com/repos/php-fig/log/zipball/0f73288fd15629204f9d42b7055f72dacbe811fc",
-              "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/0f73288fd15629204f9d42b7055f72dacbe811fc",
+                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc",
                 "shasum": ""
             },
             "require": {
@@ -1682,7 +1682,7 @@
                 "psr",
                 "psr-3"
             ],
-          "time": "2020-03-23T09:12:05+00:00"
+            "time": "2020-03-23T09:12:05+00:00"
         },
         {
             "name": "symfony/cache",
@@ -3055,16 +3055,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.14.0",
+            "version": "v1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "fbdeaec0df06cf3d51c93de80c7eb76e271f5a38"
+                "reference": "4719fa9c18b0464d399f1a63bf624b42b6fa8d14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/fbdeaec0df06cf3d51c93de80c7eb76e271f5a38",
-                "reference": "fbdeaec0df06cf3d51c93de80c7eb76e271f5a38",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/4719fa9c18b0464d399f1a63bf624b42b6fa8d14",
+                "reference": "4719fa9c18b0464d399f1a63bf624b42b6fa8d14",
                 "shasum": ""
             },
             "require": {
@@ -3076,7 +3076,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.14-dev"
+                    "dev-master": "1.15-dev"
                 }
             },
             "autoload": {
@@ -3109,7 +3109,7 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2020-01-13T11:15:53+00:00"
+            "time": "2020-02-27T09:26:54+00:00"
         },
         {
             "name": "symfony/polyfill-intl-icu",
@@ -4419,52 +4419,52 @@
             "time": "2020-02-11T15:33:47+00:00"
         },
         {
-          "name": "webimpress/safe-writer",
-          "version": "2.0.1",
+            "name": "webimpress/safe-writer",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
-              "url": "https://github.com/webimpress/safe-writer.git",
-              "reference": "d6e879960febb307c112538997316371f1e95b12"
+                "url": "https://github.com/webimpress/safe-writer.git",
+                "reference": "d6e879960febb307c112538997316371f1e95b12"
             },
             "dist": {
                 "type": "zip",
-              "url": "https://api.github.com/repos/webimpress/safe-writer/zipball/d6e879960febb307c112538997316371f1e95b12",
-              "reference": "d6e879960febb307c112538997316371f1e95b12",
+                "url": "https://api.github.com/repos/webimpress/safe-writer/zipball/d6e879960febb307c112538997316371f1e95b12",
+                "reference": "d6e879960febb307c112538997316371f1e95b12",
                 "shasum": ""
             },
             "require": {
-              "php": "^7.2"
+                "php": "^7.2"
             },
             "require-dev": {
-              "phpunit/phpunit": "^8.5.2 || ^9.0.1",
-              "webimpress/coding-standard": "^1.1.4"
+                "phpunit/phpunit": "^8.5.2 || ^9.0.1",
+                "webimpress/coding-standard": "^1.1.4"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                  "dev-master": "2.0.x-dev",
-                  "dev-develop": "2.1.x-dev",
-                  "dev-release-1.0": "1.0.x-dev"
+                    "dev-master": "2.0.x-dev",
+                    "dev-develop": "2.1.x-dev",
+                    "dev-release-1.0": "1.0.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                  "Webimpress\\SafeWriter\\": "src/"
+                    "Webimpress\\SafeWriter\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-              "BSD-2-Clause"
+                "BSD-2-Clause"
             ],
-          "description": "Tool to write files safely, to avoid race conditions",
+            "description": "Tool to write files safely, to avoid race conditions",
             "keywords": [
-              "concurrent write",
-              "file writer",
-              "race condition",
-              "safe writer",
-              "webimpress"
+                "concurrent write",
+                "file writer",
+                "race condition",
+                "safe writer",
+                "webimpress"
             ],
-          "time": "2020-03-21T15:49:08+00:00"
+            "time": "2020-03-21T15:49:08+00:00"
         }
     ],
     "packages-dev": [
@@ -5928,7 +5928,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-      "php": ">=7.4"
+        "php": ">=7.4"
     },
     "platform-dev": []
 }
