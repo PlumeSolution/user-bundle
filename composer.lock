@@ -3548,16 +3548,16 @@
         },
         {
             "name": "symfony/security-bundle",
-            "version": "v5.0.5",
+            "version": "v5.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-bundle.git",
-                "reference": "bbf735c1ea1778327a33c7fdadc3308a60667d74"
+                "reference": "c1994819a592bd703329188847881e0d67d8d001"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/bbf735c1ea1778327a33c7fdadc3308a60667d74",
-                "reference": "bbf735c1ea1778327a33c7fdadc3308a60667d74",
+                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/c1994819a592bd703329188847881e0d67d8d001",
+                "reference": "c1994819a592bd703329188847881e0d67d8d001",
                 "shasum": ""
             },
             "require": {
@@ -3627,7 +3627,7 @@
             ],
             "description": "Symfony SecurityBundle",
             "homepage": "https://symfony.com",
-            "time": "2020-02-26T10:31:10+00:00"
+            "time": "2020-03-16T12:10:54+00:00"
         },
         {
             "name": "symfony/security-core",
@@ -3763,16 +3763,16 @@
         },
         {
             "name": "symfony/security-guard",
-            "version": "v5.0.5",
+            "version": "v5.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-guard.git",
-                "reference": "8a8d4006061c59010e0b6b94b6a7803b61bf875d"
+                "reference": "f566e16e41ae7382ebd19df269800231cf5ea64d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-guard/zipball/8a8d4006061c59010e0b6b94b6a7803b61bf875d",
-                "reference": "8a8d4006061c59010e0b6b94b6a7803b61bf875d",
+                "url": "https://api.github.com/repos/symfony/security-guard/zipball/f566e16e41ae7382ebd19df269800231cf5ea64d",
+                "reference": "f566e16e41ae7382ebd19df269800231cf5ea64d",
                 "shasum": ""
             },
             "require": {
@@ -3813,7 +3813,7 @@
             ],
             "description": "Symfony Security Component - Guard",
             "homepage": "https://symfony.com",
-            "time": "2020-02-24T15:05:31+00:00"
+            "time": "2020-03-23T12:42:46+00:00"
         },
         {
             "name": "symfony/security-http",
