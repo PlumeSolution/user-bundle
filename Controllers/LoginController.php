@@ -53,6 +53,6 @@ abstract class LoginController extends AbstractController implements LoginInterf
      */
     protected function renderTemplate(FormInterface $form): Response
     {
-        return $this->render('Login/login.html.twig', ['form' => $form->createView()]);
+        return $this->render('@PSUser/Login/login.html.twig', ['form' => $form->createView()]);
     }
 }
