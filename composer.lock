@@ -2365,7 +2365,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v5.0.5",
+            "version": "v5.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -2498,16 +2498,16 @@
         },
         {
             "name": "symfony/framework-bundle",
-            "version": "v5.0.5",
+            "version": "v5.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/framework-bundle.git",
-                "reference": "fc6a0059fedaaf15efc66b64b7a3cedaa4b1edf4"
+                "reference": "f639fc1dac57442f91f87b54b610666b76ebaa81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/fc6a0059fedaaf15efc66b64b7a3cedaa4b1edf4",
-                "reference": "fc6a0059fedaaf15efc66b64b7a3cedaa4b1edf4",
+                "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/f639fc1dac57442f91f87b54b610666b76ebaa81",
+                "reference": "f639fc1dac57442f91f87b54b610666b76ebaa81",
                 "shasum": ""
             },
             "require": {
@@ -2624,7 +2624,7 @@
             ],
             "description": "Symfony FrameworkBundle",
             "homepage": "https://symfony.com",
-            "time": "2020-02-29T10:07:09+00:00"
+            "time": "2020-03-23T12:42:46+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -3472,16 +3472,16 @@
         },
         {
             "name": "symfony/routing",
-            "version": "v5.0.5",
+            "version": "v5.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
-                "reference": "d6ca39fd05c1902bf34d724ba06fb8044a0b46de"
+                "reference": "c4d3064f355fed672721da90e0153eb7cbe1e574"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/d6ca39fd05c1902bf34d724ba06fb8044a0b46de",
-                "reference": "d6ca39fd05c1902bf34d724ba06fb8044a0b46de",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/c4d3064f355fed672721da90e0153eb7cbe1e574",
+                "reference": "c4d3064f355fed672721da90e0153eb7cbe1e574",
                 "shasum": ""
             },
             "require": {
@@ -3544,7 +3544,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2020-02-25T14:24:11+00:00"
+            "time": "2020-03-16T12:10:54+00:00"
         },
         {
             "name": "symfony/security-bundle",
