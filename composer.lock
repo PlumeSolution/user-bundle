@@ -3821,7 +3821,7 @@
         },
         {
             "name": "symfony/security-core",
-            "version": "v5.1.0",
+            "version": "v5.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-core.git",
@@ -3896,7 +3896,7 @@
         },
         {
             "name": "symfony/security-csrf",
-            "version": "v5.1.0",
+            "version": "v5.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-csrf.git",
