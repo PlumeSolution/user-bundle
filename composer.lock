@@ -1989,7 +1989,7 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v5.1.1",
+            "version": "v5.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
@@ -3513,7 +3513,7 @@
         },
         {
             "name": "symfony/property-access",
-            "version": "v5.1.1",
+            "version": "v5.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-access.git",
@@ -3582,16 +3582,16 @@
         },
         {
             "name": "symfony/property-info",
-            "version": "v5.1.1",
+            "version": "v5.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-info.git",
-                "reference": "8bec4622480515449873913ab687bf0fc86374c2"
+                "reference": "75d79faca45092829b55eb83f73068e34c6567c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-info/zipball/8bec4622480515449873913ab687bf0fc86374c2",
-                "reference": "8bec4622480515449873913ab687bf0fc86374c2",
+                "url": "https://api.github.com/repos/symfony/property-info/zipball/75d79faca45092829b55eb83f73068e34c6567c5",
+                "reference": "75d79faca45092829b55eb83f73068e34c6567c5",
                 "shasum": ""
             },
             "require": {
@@ -3606,7 +3606,7 @@
             },
             "require-dev": {
                 "doctrine/annotations": "~1.7",
-                "phpdocumentor/reflection-docblock": "^3.0|^4.0",
+                "phpdocumentor/reflection-docblock": "^3.0|^4.0|^5.0",
                 "symfony/cache": "^4.4|^5.0",
                 "symfony/dependency-injection": "^4.4|^5.0",
                 "symfony/serializer": "^4.4|^5.0"
@@ -3655,7 +3655,7 @@
                 "type",
                 "validator"
             ],
-            "time": "2020-06-04T09:56:18+00:00"
+            "time": "2020-06-15T11:50:15+00:00"
         },
         {
             "name": "symfony/routing",
@@ -3737,16 +3737,16 @@
         },
         {
             "name": "symfony/security-bundle",
-            "version": "v5.1.1",
+            "version": "v5.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-bundle.git",
-                "reference": "4c035aa0345d7688beed8153406287f118a7de29"
+                "reference": "d2013a73a0163f4fad6d24fbb81affb6e943ec2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/4c035aa0345d7688beed8153406287f118a7de29",
-                "reference": "4c035aa0345d7688beed8153406287f118a7de29",
+                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/d2013a73a0163f4fad6d24fbb81affb6e943ec2e",
+                "reference": "d2013a73a0163f4fad6d24fbb81affb6e943ec2e",
                 "shasum": ""
             },
             "require": {
@@ -3760,7 +3760,7 @@
                 "symfony/security-core": "^5.1",
                 "symfony/security-csrf": "^4.4|^5.0",
                 "symfony/security-guard": "^5.1",
-                "symfony/security-http": "^5.1"
+                "symfony/security-http": "^5.1,>=5.1.2"
             },
             "conflict": {
                 "symfony/browser-kit": "<4.4",
@@ -3818,11 +3818,11 @@
             ],
             "description": "Symfony SecurityBundle",
             "homepage": "https://symfony.com",
-            "time": "2020-06-08T06:10:12+00:00"
+            "time": "2020-06-15T08:29:02+00:00"
         },
         {
             "name": "symfony/security-core",
-            "version": "v5.1.1",
+            "version": "v5.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-core.git",
@@ -3897,7 +3897,7 @@
         },
         {
             "name": "symfony/security-csrf",
-            "version": "v5.1.1",
+            "version": "v5.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-csrf.git",
@@ -3956,7 +3956,7 @@
         },
         {
             "name": "symfony/security-guard",
-            "version": "v5.1.1",
+            "version": "v5.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-guard.git",
@@ -4011,16 +4011,16 @@
         },
         {
             "name": "symfony/security-http",
-            "version": "v5.1.1",
+            "version": "v5.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-http.git",
-                "reference": "8ea60d67b80bb4895c18437e773d7a409721c33c"
+                "reference": "671aeab2db9162288e27c8ef525c63d51c810cb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-http/zipball/8ea60d67b80bb4895c18437e773d7a409721c33c",
-                "reference": "8ea60d67b80bb4895c18437e773d7a409721c33c",
+                "url": "https://api.github.com/repos/symfony/security-http/zipball/671aeab2db9162288e27c8ef525c63d51c810cb3",
+                "reference": "671aeab2db9162288e27c8ef525c63d51c810cb3",
                 "shasum": ""
             },
             "require": {
@@ -4075,7 +4075,7 @@
             ],
             "description": "Symfony Security Component - HTTP Integration",
             "homepage": "https://symfony.com",
-            "time": "2020-05-31T21:41:52+00:00"
+            "time": "2020-06-13T15:06:42+00:00"
         },
         {
             "name": "symfony/service-contracts",
