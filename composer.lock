@@ -4490,16 +4490,16 @@
         },
         {
             "name": "symfony/security-core",
-            "version": "v5.1.6",
+            "version": "v5.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-core.git",
-                "reference": "ae0d56746a9071e11015e8372d42e1e04fe9361d"
+                "reference": "6c5d337d9549c1ab4c2edcee50bbb0bc509ebb17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-core/zipball/ae0d56746a9071e11015e8372d42e1e04fe9361d",
-                "reference": "ae0d56746a9071e11015e8372d42e1e04fe9361d",
+                "url": "https://api.github.com/repos/symfony/security-core/zipball/6c5d337d9549c1ab4c2edcee50bbb0bc509ebb17",
+                "reference": "6c5d337d9549c1ab4c2edcee50bbb0bc509ebb17",
                 "shasum": ""
             },
             "require": {
@@ -4575,7 +4575,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-02T16:23:27+00:00"
+            "time": "2020-10-04T07:09:21+00:00"
         },
         {
             "name": "symfony/security-csrf",
@@ -4721,16 +4721,16 @@
         },
         {
             "name": "symfony/security-http",
-            "version": "v5.1.6",
+            "version": "v5.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-http.git",
-                "reference": "b5c973666a1aee1294391db843c97dc83fd27c14"
+                "reference": "22d653f2b407794f6a81cc1a76aa617e65ad6d86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-http/zipball/b5c973666a1aee1294391db843c97dc83fd27c14",
-                "reference": "b5c973666a1aee1294391db843c97dc83fd27c14",
+                "url": "https://api.github.com/repos/symfony/security-http/zipball/22d653f2b407794f6a81cc1a76aa617e65ad6d86",
+                "reference": "22d653f2b407794f6a81cc1a76aa617e65ad6d86",
                 "shasum": ""
             },
             "require": {
@@ -4799,7 +4799,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-17T09:39:20+00:00"
+            "time": "2020-10-03T13:02:03+00:00"
         },
         {
             "name": "symfony/service-contracts",
