@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PSUserBundle\\": "src"
+            "PSUserBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PSUserBundle\\Tests\\": "Tests/"
+            "PSUserBundle\\Tests\\": "tests/"
         }
     },
     "scripts": {
