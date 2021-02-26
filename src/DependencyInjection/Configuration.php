@@ -1,6 +1,6 @@
 <?php
 
-namespace PSUserBundle\DependencyInjection;
+namespace PlumeSolution\UserBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

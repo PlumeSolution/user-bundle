@@ -1,10 +1,10 @@
 <?php
 
-namespace PSUserBundle\Models;
+namespace PlumeSolution\UserBundle\Models;
 
-use PSUserBundle\Credentials\NicknamePasswordTrait;
-use PSUserBundle\Fields\EqualTrait;
-use PSUserBundle\Fields\RolesTrait;
+use PlumeSolution\UserBundle\Credentials\NicknamePasswordTrait;
+use PlumeSolution\UserBundle\Fields\EqualTrait;
+use PlumeSolution\UserBundle\Fields\RolesTrait;
 
 class NicknamePasswordUser extends BaseUser
 {

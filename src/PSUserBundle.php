@@ -2,7 +2,7 @@
 
 namespace PSUserBundle;
 
-use PSUserBundle\DependencyInjection\PSUserExtension;
+use PlumeSolution\UserBundle\DependencyInjection\PSUserExtension;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

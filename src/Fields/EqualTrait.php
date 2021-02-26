@@ -1,6 +1,6 @@
 <?php
 
-namespace PSUserBundle\Fields;
+namespace PlumeSolution\UserBundle\Fields;
 
 use Symfony\Component\Security\Core\User\UserInterface;
 

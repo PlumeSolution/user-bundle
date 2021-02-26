@@ -1,13 +1,13 @@
 <?php
 
-namespace PSUserBundle\Fields;
+namespace PlumeSolution\UserBundle\Fields;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Trait NicknameTrait
  *
- * @package PSUserBundle\Fields
+ * @package PlumeSolution\UserBundle\Fields
  */
 trait NicknameTrait
 {

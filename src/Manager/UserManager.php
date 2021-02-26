@@ -1,6 +1,6 @@
 <?php
 
-namespace PSUserBundle\Manager;
+namespace PlumeSolution\UserBundle\Manager;
 
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
@@ -9,7 +9,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 /**
  * Class UserManager
  *
- * @package PSUserBundle\Manager
+ * @package PlumeSolution\UserBundle\Manager
  */
 class UserManager
 {

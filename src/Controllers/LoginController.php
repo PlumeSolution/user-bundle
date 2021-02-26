@@ -1,8 +1,8 @@
 <?php
 
-namespace PSUserBundle\Controllers;
+namespace PlumeSolution\UserBundle\Controllers;
 
-use PSUserBundle\Form\LoginType;
+use PlumeSolution\UserBundle\Form\LoginType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\Request;

@@ -1,6 +1,6 @@
 <?php
 
-namespace PSUserBundle\Models;
+namespace PlumeSolution\UserBundle\Models;
 
 use Doctrine\ORM\Mapping as ORM;
 use Serializable;

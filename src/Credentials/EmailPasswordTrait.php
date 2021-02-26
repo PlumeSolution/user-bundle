@@ -1,9 +1,9 @@
 <?php
 
-namespace PSUserBundle\Credentials;
+namespace PlumeSolution\UserBundle\Credentials;
 
-use PSUserBundle\Fields\EmailTrait;
-use PSUserBundle\Fields\PasswordTrait;
+use PlumeSolution\UserBundle\Fields\EmailTrait;
+use PlumeSolution\UserBundle\Fields\PasswordTrait;
 
 trait EmailPasswordTrait
 {

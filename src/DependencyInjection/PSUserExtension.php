@@ -1,6 +1,6 @@
 <?php
 
-namespace PSUserBundle\DependencyInjection;
+namespace PlumeSolution\UserBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;

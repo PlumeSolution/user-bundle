@@ -1,9 +1,9 @@
 <?php
 
-namespace PSUserBundle\Tests;
+namespace PlumeSolution\UserBundle\Tests;
 
 use PHPUnit\Framework\TestCase;
-use PSUserBundle\Models\NicknamePasswordUser;
+use PlumeSolution\UserBundle\Models\NicknamePasswordUser;
 
 class NicknamePasswordUserTest extends TestCase
 {

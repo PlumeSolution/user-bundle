@@ -1,6 +1,6 @@
 <?php
 
-namespace PSUserBundle\Controllers;
+namespace PlumeSolution\UserBundle\Controllers;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

@@ -1,14 +1,14 @@
 <?php
 
-namespace PSUserBundle\Fields;
+namespace PlumeSolution\UserBundle\Fields;
 
 use Doctrine\ORM\Mapping as ORM;
-use PSUserBundle\Models\BaseUser;
+use PlumeSolution\UserBundle\Models\BaseUser;
 
 /**
  * Trait RolesTrait
  *
- * @package PSUserBundle\Fields
+ * @package PlumeSolution\UserBundle\Fields
  */
 trait RolesTrait
 {

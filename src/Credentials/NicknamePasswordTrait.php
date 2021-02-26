@@ -1,14 +1,14 @@
 <?php
 
-namespace PSUserBundle\Credentials;
+namespace PlumeSolution\UserBundle\Credentials;
 
-use PSUserBundle\Fields\NicknameTrait;
-use PSUserBundle\Fields\PasswordTrait;
+use PlumeSolution\UserBundle\Fields\NicknameTrait;
+use PlumeSolution\UserBundle\Fields\PasswordTrait;
 
 /**
  * Trait NicknamePasswordTrait
  *
- * @package PSUserBundle\Credentials
+ * @package PlumeSolution\UserBundle\Credentials
  * Used for provide Username/Password auth
  */
 trait NicknamePasswordTrait
