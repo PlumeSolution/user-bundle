@@ -11,6 +11,4 @@ trait EmailAndNicknamePasswordTrait
     use NicknameTrait;
     use EmailTrait;
     use PasswordTrait;
-
-
 }
