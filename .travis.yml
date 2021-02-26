@@ -1,7 +1,7 @@
 language: php
 os: linux
 
-matrix:
+jobs:
   include:
     - php: 7.4
       env: SYMFONY_REQUIRE=4.*
