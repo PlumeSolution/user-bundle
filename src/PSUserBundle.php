@@ -1,6 +1,6 @@
 <?php
 
-namespace PSUserBundle;
+namespace PlumeSolution\UserBundle;
 
 use PlumeSolution\UserBundle\DependencyInjection\PSUserExtension;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
