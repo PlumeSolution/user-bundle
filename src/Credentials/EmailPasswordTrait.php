@@ -9,4 +9,12 @@ trait EmailPasswordTrait
 {
     use EmailTrait;
     use PasswordTrait;
+
+    /**
+     * @return string
+     */
+    public function getUsername(): string
+    {
+        return $this->email;
+    }
 }

@@ -15,4 +15,12 @@ trait NicknamePasswordTrait
 {
     use NicknameTrait;
     use PasswordTrait;
+
+    /**
+     * @return string
+     */
+    public function getUsername(): string
+    {
+        return $this->nickname;
+    }
 }

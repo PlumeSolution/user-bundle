@@ -37,12 +37,4 @@ trait NicknameTrait
 
         return $this;
     }
-
-    /**
-     * @return string
-     */
-    public function getUsername(): string
-    {
-        return $this->nickname;
-    }
 }
