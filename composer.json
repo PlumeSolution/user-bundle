@@ -40,6 +40,9 @@
         "tests": [
             "phpunit",
             "phpcs"
+        ],
+        "cs": [
+            "phpcs"
         ]
     }
 }
