@@ -2,17 +2,15 @@
 
 namespace PSUserBundle\Credentials;
 
+use PSUserBundle\Fields\EmailTrait;
 use PSUserBundle\Fields\NicknameTrait;
 use PSUserBundle\Fields\PasswordTrait;
 
-/**
- * Trait NicknamePasswordTrait
- *
- * @package PSUserBundle\Credentials
- * Used for provide Username/Password auth
- */
-trait NicknamePasswordTrait
+trait EmailAndNicknamePasswordTrait
 {
     use NicknameTrait;
+    use EmailTrait;
     use PasswordTrait;
+
+
 }

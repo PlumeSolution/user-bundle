@@ -14,7 +14,7 @@ trait PasswordTrait
     protected string $password;
 
     /**
-     * @var string
+     * @var null|string
      * @ORM\Column(type="string", nullable=true)
      * The salt used to encode user password
      */
@@ -45,7 +45,7 @@ trait PasswordTrait
     }
 
     /**
-     * @param string $salt
+     * @param string|null $salt
      */
     public function setSalt(?string $salt): void
     {

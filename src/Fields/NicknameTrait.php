@@ -14,7 +14,7 @@ trait NicknameTrait
     /**
      * @var string
      * @ORM\Column(type="string")
-     * The Nickname of user
+     * The nickname of user
      */
     protected string $nickname;
 
@@ -28,9 +28,21 @@ trait NicknameTrait
 
     /**
      * @param string $nickname
+     *
+     * @return NicknameTrait
      */
-    public function setNickname($nickname): void
+    public function setNickname(string $nickname): self
     {
         $this->nickname = $nickname;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUsername(): string
+    {
+        return $this->nickname;
     }
 }
