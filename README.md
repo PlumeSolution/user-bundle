@@ -96,7 +96,7 @@ security:
                 path:     login
                 remember_me_parameter: 'login[remember]'
 ```
-
+_______________________________________________________________________
 Support
 =======
 
