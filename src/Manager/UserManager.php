@@ -2,6 +2,7 @@
 
 namespace PlumeSolution\UserBundle\Manager;
 
+use App\Entity\User;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -109,5 +110,17 @@ class UserManager
         $this->saveUser($user);
 
         return $user;
+    }
+
+    /**
+     * Count number of user
+     *
+     * @return int
+     *
+     * TODO : change the User class to be loaded from config file.
+     */
+    public function countUser(): int
+    {
+        return count($this->doctrine->getRepository(User::class)->findAll());
     }
 }
