@@ -15,7 +15,6 @@
         "php": "^7.4 | ^8.0",
         "symfony/http-kernel": "^4.4 | ^5.1.5",
         "symfony/security-bundle": "^4.4 | ^5.0",
-        "ocramius/proxy-manager": "^2.8.1",
         "symfony/orm-pack": "^2.0",
         "doctrine/doctrine-bundle": "^2.0",
         "symfony/framework-bundle": "^4.4 | ^5.0",
