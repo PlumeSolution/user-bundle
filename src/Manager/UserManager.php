@@ -2,7 +2,6 @@
 
 namespace PlumeSolution\UserBundle\Manager;
 
-use App\Entity\User;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
