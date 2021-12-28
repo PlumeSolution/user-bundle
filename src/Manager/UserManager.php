@@ -4,7 +4,8 @@ namespace PlumeSolution\UserBundle\Manager;
 
 use App\Entity\User;
 use Doctrine\Persistence\ManagerRegistry;
-use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
+use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
@@ -19,20 +20,27 @@ class UserManager
      */
     protected ManagerRegistry $doctrine;
     /**
-     * @var UserPasswordEncoderInterface
+     * @var UserPasswordHasherInterface
      */
-    protected UserPasswordEncoderInterface $passwordEncoder;
+    protected UserPasswordHasherInterface $passwordEncoder;
+
+    /**
+     * @var string
+     */
+    private string $userClass;
 
     /**
      * UserManager constructor.
      *
-     * @param ManagerRegistry              $doctrine
-     * @param UserPasswordEncoderInterface $passwordEncoder
+     * @param ManagerRegistry $doctrine
+     * @param UserPasswordHasherInterface $passwordEncoder
+     * @param string $userClass
      */
-    public function __construct(ManagerRegistry $doctrine, UserPasswordEncoderInterface $passwordEncoder)
+    public function __construct(ManagerRegistry $doctrine, UserPasswordHasherInterface $passwordEncoder, string $userClass)
     {
         $this->doctrine = $doctrine;
         $this->passwordEncoder = $passwordEncoder;
+        $this->userClass = $userClass;
     }
 
     /**
@@ -85,21 +93,20 @@ class UserManager
     /**
      * Create a new user in database
      *
-     * @param string $userClass
      * @param string $nickname
      * @param string $password
      *
      * @return UserInterface
      */
-    public function createUser(string $userClass, string $nickname, string $password): UserInterface
+    public function createUser(string $nickname, string $password): UserInterface
     {
         /**
-         * @var UserInterface $user
+         * @var UserInterface|PasswordAuthenticatedUserInterface $user
          */
-        $user = new $userClass($nickname, '', '');
+        $user = new $this->userClass($nickname, '', '');
 
         $user->setPassword(
-            $this->passwordEncoder->encodePassword(
+            $this->passwordEncoder->hashPassword(
                 $user,
                 $password
             )
@@ -121,6 +128,6 @@ class UserManager
      */
     public function countUser(): int
     {
-        return count($this->doctrine->getRepository(User::class)->findAll());
+        return count($this->doctrine->getRepository($this->userClass)->findAll());
     }
 }
