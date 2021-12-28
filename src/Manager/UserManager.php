@@ -123,8 +123,6 @@ class UserManager
      * Count number of user
      *
      * @return int
-     *
-     * TODO : change the User class to be loaded from config file.
      */
     public function countUser(): int
     {
